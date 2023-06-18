@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<style>
+			/* Table */
+			table, th, td {
+				border:1px solid black;
+			}
+			.containerX{
+				display: flex;
+			}
+			.containerX div{
+				padding: 10px 50px;
+			}
+			.containerX img{
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="">Jason</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+
+					<!-- Start your code here -->
+					<!-- Table Section -->
+					<h2 style="">Table Section</h2>
+					<div class="containerX table">
+						<div>
+							<p>this table is colspan</p><table>
+								<caption>Table 1</caption>
+								<thead>
+								  <tr>
+									<th colspan="1">Month</th>
+									<th colspan="2">Savings</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>January</td>
+									<td>$250</td>
+									<td>$75</td>
+								  </tr>
+								  <tr>
+									<td>February</td>
+									<td>$250</td>
+									<td>$125</td>
+								  </tr>
+								</tbody>
+								<tfoot>
+								  <tr>
+									<td>Sum</td>
+									<td>$500</td>
+									<td>$200</td>
+								  </tr>
+								  
+								</tfoot>
+							  </table>
+						</div>
+					<div>
+						<p>this table is rowspan</p><table>
+							<caption>Table 2</caption>
+							<thead>
+							  <tr>
+								<th>Month</th>
+								<th colspan="4">Savings</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td rowspan="2">January</td>
+								<td>$50</td>
+								<td>$25</td>
+								<td>$200</td>
+								<td>$250</td>
+							  </tr>
+							  <tr>
+	
+								<td>$200</td>
+								<td>$50</td>
+								<td>$50</td>
+								<td>$100</td>
+							  </tr>
+							  <tr>
+								<td rowspan="2">February</td>
+								<td>$200</td>
+								<td>$50</td>
+	
+								<td>$250</td>
+								<td>$400</td>
+							  </tr>
+							  <tr>
+								<td>$200</td>
+								<td>$100</td>
+								<td>$25</td>
+								<td>$400</td>
+							  </tr>
+							  
+							</tbody>
+							<tfoot>
+							  <tr>
+								<td>Sum</td>
+								<td colspan="4">$2550</td>
+							  </tr>
+							  
+							</tfoot>
+						  </table>						
+					</div>			
+					</div>			
+					<!-- End table section -->
+
+					<!-- List Section -->
+					<h2 style="padding-top: 50px;">List Section</h2>
+					<div class="containerX list">
+						<div class="div1">
+							<ul>
+							  <li>Angels</li>
+							  <li>RedSox</li>
+							  <li>Cubs</li>
+							  <li>Dodgers</li>
+							  <li>Yankees</li>
+							  <li>Phillies</li>
+							  <li>BlueJays</li>
+							</ul>  
+							<p>An unordered HTML list</p>
+						</div>
+						<div class="div2">
+							<ol>
+								<li>Angels</li>
+							  <li>RedSox</li>
+							  <li>Cubs</li>
+							  <li>Dodgers</li>
+							  <li>Yankees</li>
+							  <li>Phillies</li>
+							  <li>BlueJays</li>							  
+							  </ol>  
+							<p>An ordered HTML list</p>
+						</div>
+					</div>
+					<!-- End List Section -->
+
+						<!-- Image Section -->
+						<h2>Image Section</h2>
+						<div class="containerX img">
+							<div class="div1">								  
+								<img src="https://cdn.dribbble.com/users/72177/screenshots/16526731/media/507bd593dbe666c31d3b1d5bc573d13b.jpg?compress=1&resize=1600x1200&vertical=center" alt="GOAT of baseball">
+								<p>Image 1</p>
+							</div>
+							<div class="div2">
+								<img src="https://cdn.dribbble.com/users/72177/screenshots/16526731/media/507bd593dbe666c31d3b1d5bc573d13b.jpg?compress=1&resize=1600x1200&vertical=center" alt="GOAT of baseball">
+								<p>Image 2</p>
+							</div>
+							<div class="div3">
+								<img src="https://cdn.dribbble.com/users/72177/screenshots/16526731/media/507bd593dbe666c31d3b1d5bc573d13b.jpg?compress=1&resize=1600x1200&vertical=center" alt="GOAT of baseball">
+								<p>Image 3</p>
+							</div>
+						
+						</div>
+						<p> Featuring Shohei Ohtani, best baseball player ever! </p>
+
+						<!-- End Image Section -->					
+						<!-- Audio Section -->
+						<h2>Audio Section</h2>
+						<div class="containerX img">
+							<audio controls="">
+								<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+							  </audio>
+							  <p>This section contains an HTML5 audio player. 
+								Please hit the play button to listen to the audio and enjoy.
+							</p>
+						</div>
+						<!-- End Audio Section -->
+						<!-- Audio Section -->
+						<h2>VIdeo Section</h2>
+						<div class="containerX vid">
+								<div>
+								  <video controls>
+									<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.mp4" type="video/mp4">
+									<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.ogg" type="video/ogg">
+									<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.webm" type="video/webm">
+									Your browser does not support the video tag.
+								  </video>
+								</div>
+								<p>Kindly hit the play button to play the video, enjoy!  </p>
+						</div>
+						<!-- End VIdeo Section -->
+					<!-- End your code here  -->
+    			</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
